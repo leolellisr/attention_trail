@@ -294,28 +294,28 @@ if clean:
 
 
 # ID inputs - Format "YYYY_MM_DD_HH_MM_SS_step"
-goal_time_img = "2024_05_20_14_06_15_1_17" # t = 1
-goal_time_red = "2024_05_20_14_06_15_1_17" # t = 3
-goal_time_redFM = "2024_05_20_14_06_15_1_17" # t = 3
+goal_time_img = "2024_05_20_15_02_32_1_4" # t = 1
+goal_time_red = "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_redFM = "2024_05_20_15_02_32_1_4" # t = 3
 
-goal_time_green = "2024_05_20_14_06_15_1_17" # t = 3
-goal_time_greenFM = "2024_05_20_14_06_15_1_17"
+goal_time_green = "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_greenFM = "2024_05_20_15_02_32_1_4"
 
-goal_time_blue = "2024_05_20_14_06_15_1_17" # t = 3
-goal_time_blueFM = "2024_05_20_14_06_15_1_17"
+goal_time_blue = "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_blueFM = "2024_05_20_15_02_32_1_4"
 
-goal_time_topColor = "2024_05_20_14_06_15_1_17" # t = 3
+goal_time_topColor = "2024_05_20_15_02_32_1_4" # t = 3
 
-goal_time_depth = "2024_05_20_14_06_14_1_33" # t = 2
-goal_time_depthFM = "2024_05_20_14_06_15_1_17" # t = 3
-goal_time_topdepthFM = "2024_05_20_14_06_15_1_17" # t = 3
+goal_time_depth = "2024_05_20_15_02_31_1_7" # t = 2
+goal_time_depthFM = "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_topdepthFM = "2024_05_20_15_02_32_1_4" # t = 3
 
-goal_time_cfm =  "2024_05_20_14_06_15_1_17" # t = 3
+goal_time_cfm =  "2024_05_20_15_02_32_1_4" # t = 3
  
-goal_time_sal =  "2024_05_20_14_06_15_1_17" # t = 3
-goal_time_att =  "2024_05_20_14_06_15_1_17" # t = 3
-goal_time_win =  "2024_05_20_14_06_15_1_17" # t = 3 
-goal_time_winT =  "2024_05_20_14_06_15_1_17" # t = 3 
+goal_time_sal =  "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_att =  "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_win =  "2024_05_20_15_02_32_1_4" # t = 3 
+goal_time_winT =  "2024_05_20_15_02_32_1_4" # t = 3 
 
 if debug: print("begin")
 # Open grayscaled img 
