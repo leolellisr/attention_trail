@@ -48,7 +48,6 @@ import codelets.support.*;
 
 /**
  *
- * @author L. M. Berto
  * @author L. L. Rossi (leolellisr)
  */
 public class AgentMind extends Mind {
