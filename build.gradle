@@ -5,16 +5,14 @@ plugins {
     id 'java-library'
 }
 
-mainClassName = 'cst_attmod_app.CST_AttMod_App'
+mainClassName = 'cst_attmod_app.attention_trail'
 
 repositories {
     flatDir {
         dirs 'libs'
     }
     mavenCentral()  // Only use Maven Central (most libraries are here)
-    maven {
-        url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
-    }
+    
     maven { 
         url 'https://jitpack.io'
     }
@@ -27,13 +25,7 @@ dependencies {
     // JUNIT
     testImplementation 'junit:junit:4.13.2'
 
-    // Add dependencies directly from Maven Central
-    implementation 'org.apache.commons:commons-codec:1.15' // Correct version of commons-codec
-    implementation 'org.apache.commons:commons-io:2.8.0'  // Correct version of commons-io
-    implementation 'org.apache.commons:commons-lang3:3.12.0'  // Correct version of commons-lang
-    implementation 'org.apache.commons:commons-httpclient:3.1'  // Correct version of commons-httpclient
-    implementation 'org.apache.commons:commons-logging:1.2'  // Correct version of commons-logging
-    implementation 'org.apache.commons:commons-net:3.6'  // Correct version of commons-net
+    
 }
 
 task uberJar(type: Jar) {
