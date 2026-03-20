@@ -12,7 +12,6 @@
  
 package cst_attmod_app;
 
-import br.unicamp.cst.util.viewer.MindViewer;
 import outsideCommunication.OutsideCommunication;
 
 import java.io.File;
@@ -39,9 +38,7 @@ public class CST_AttMod_App {
     	}
         OutsideCommunication oc = new OutsideCommunication();
         oc.start();
-        AgentMind am = new AgentMind(oc, "exploring", "impulses");
-        MindViewer mv = new MindViewer(am,"mind",null);
-        mv.setVisible(true);
+        AgentMind am = new AgentMind(oc, "learning", "impulses");
     }
     
 }

@@ -294,28 +294,28 @@ if clean:
 
 
 # ID inputs - Format "YYYY_MM_DD_HH_MM_SS_step"
-goal_time_img = "2024_05_20_15_02_32_1_4" # t = 1
-goal_time_red = "2024_05_20_15_02_32_1_4" # t = 3
-goal_time_redFM = "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_img = "2026_03_18_09_34_46_1_3" # t = 1
+goal_time_red = "2026_03_18_09_34_46_1_3" # t = 3
+goal_time_redFM = "2026_03_18_09_34_46_1_3" # t = 3
 
-goal_time_green = "2024_05_20_15_02_32_1_4" # t = 3
-goal_time_greenFM = "2024_05_20_15_02_32_1_4"
+goal_time_green = "2026_03_18_09_34_46_1_3" # t = 3
+goal_time_greenFM = "2026_03_18_09_34_46_1_3"
 
-goal_time_blue = "2024_05_20_15_02_32_1_4" # t = 3
-goal_time_blueFM = "2024_05_20_15_02_32_1_4"
+goal_time_blue = "2026_03_18_09_34_46_1_3" # t = 3
+goal_time_blueFM = "2026_03_18_09_34_46_1_3"
 
-goal_time_topColor = "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_topColor = "2026_03_18_09_34_46_1_3" # t = 3
 
-goal_time_depth = "2024_05_20_15_02_31_1_7" # t = 2
-goal_time_depthFM = "2024_05_20_15_02_32_1_4" # t = 3
-goal_time_topdepthFM = "2024_05_20_15_02_32_1_4" # t = 3
+#goal_time_depth = "2026_03_18_09_34_46_1_3" # t = 2
+#goal_time_depthFM = "2026_03_18_09_34_46_1_3" # t = 3
+#goal_time_topdepthFM = "2026_03_18_09_34_46_1_3" # t = 3
 
-goal_time_cfm =  "2024_05_20_15_02_32_1_4" # t = 3
+goal_time_cfm =  "2026_03_18_09_34_35_1_18" # t = 3
  
-goal_time_sal =  "2024_05_20_15_02_32_1_4" # t = 3
-goal_time_att =  "2024_05_20_15_02_32_1_4" # t = 3
-goal_time_win =  "2024_05_20_15_02_32_1_4" # t = 3 
-goal_time_winT =  "2024_05_20_15_02_32_1_4" # t = 3 
+goal_time_sal =  "2026_03_18_09_34_46_1_3" # t = 3
+goal_time_att =  "2026_03_18_09_34_46_1_3" # t = 3
+goal_time_win =  "2026_03_18_09_34_46_1_3" # t = 3 
+goal_time_winT =  "2026_03_18_09_34_46_1_3" # t = 3 
 
 if debug: print("begin")
 # Open grayscaled img 
@@ -347,14 +347,14 @@ if aux_img > 0:
     map_data("sensor", path_res+"vision_red.txt", goal_time_red, goal_time_img, img)
     map_data("sensor", path_res+"vision_green.txt", goal_time_green, goal_time_img, img)
     map_data("sensor", path_res+"vision_blue.txt", goal_time_blue, goal_time_img, img)
-    map_data("sensor", path_res+"depth.txt", goal_time_depth, goal_time_img, img)
+    #map_data("sensor", path_res+"depth.txt", goal_time_depth, goal_time_img, img)
     
     if debug: print("fms")
 
     map_data("fm", path_res+"vision_red_FM.txt", goal_time_redFM, goal_time_img, img)
     map_data("fm", path_res+"vision_green_FM.txt", goal_time_greenFM, goal_time_img, img)
     map_data("fm", path_res+"vision_blue_FM.txt", goal_time_blueFM, goal_time_img, img)
-    map_data("fm", path_res+"depth_FM.txt", goal_time_depthFM, goal_time_img, img)
+    #map_data("fm", path_res+"depth_FM.txt", goal_time_depthFM, goal_time_img, img)
     
     if debug: print("color td")
     
@@ -362,17 +362,17 @@ if aux_img > 0:
     
     #if debug: print("region td")
 
-    map_data("fm", path_res+"region_top_FM.txt",goal_time_img, goal_time_img, img)
+    #map_data("fm", path_res+"region_top_FM.txt",goal_time_img, goal_time_img, img)
     
     if debug: print("depth td")
 
-    map_data("fm", path_res+"depth_top_FM.txt", goal_time_topdepthFM, goal_time_img, img)
+    #map_data("fm", path_res+"depth_top_FM.txt", goal_time_topdepthFM, goal_time_img, img)
     
     if debug: print("att")
 
     map_data("fm", path_res+"CFM.txt", goal_time_cfm, goal_time_img, img)
     map_data("fm", path_res+"salMap.txt", goal_time_sal, goal_time_img, img)
     map_data("fm", path_res+"attMap.txt", goal_time_att, goal_time_img, img)
-    map_winner("fm", path_res+"winners.txt", path_res+"winnerType.txt", goal_time_win, goal_time_winT, img)
+    #map_winner("fm", path_res+"winners.txt", path_res+"winnerType.txt", goal_time_win, goal_time_winT, img)
 
 print("fim")

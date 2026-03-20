@@ -13,7 +13,7 @@
 package cst_attmod_app;
 
 
-import attention.DecisionMaking;
+import attention.WinnerPicker;
 import attention.SalMap;
 import attention.Winner;
 import br.unicamp.cst.core.entities.Codelet;
@@ -304,7 +304,7 @@ public class AgentMind extends Mind {
         insertCodelet(sal_map_cod);
         
         //DECISION MAKING CODELET
-        Codelet dec_mak_cod = new DecisionMaking(oc.vision, "WINNERS", "ATTENTIONAL_MAP", "SALIENCY_MAP", Buffersize, Sensor_dimension);
+        Codelet dec_mak_cod = new WinnerPicker(oc.vision, "WINNERS", "ATTENTIONAL_MAP", "SALIENCY_MAP", Buffersize, Sensor_dimension);
         dec_mak_cod.addInput(salMapMO);
         dec_mak_cod.addInput(type_fmMO);
         dec_mak_cod.addOutput(winnersMO);
