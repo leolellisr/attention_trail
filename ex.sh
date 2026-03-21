@@ -1,22 +1,9 @@
-# attention_trail
-This repository composes the modules available for an attentional system  based on the selection model for perception proposed by Colombini (2016).  The modules were implemented with CST.
+# FAQ
 
-Description available on the [CST website](https://cst.fee.unicamp.br/tutorials/attention) https://cst.fee.unicamp.br/tutorials/attention
-
-
-## FAQ
-
-
-'''
-
-# if needed make the script executable
-chmod +x ex.sh
-
-'''
+# make executable
+# chmod +x script1.sh
 
 # CST
-
-'''
 
 # download cst to opt/cst (or tmp/cst) and build - Tutorial script
 
@@ -31,12 +18,7 @@ cd ~/git/test/opt
 mkdir ~/git/test/libs
 cp -v ~/git/test/opt/build/libs/*.jar ~/git/test/libs/ || { log "No CST jars found"; exit 1; }
 
-'''
 
 # Coppelia 
 
-'''
-
 # copy libremoteApiJava.so to usr/lib
-
-'''
